@@ -580,9 +580,16 @@ ci_random_navigate(arg_t _)
 bool
 cg_dmenu_output(arg_t _)
 {
-	printf("%s\n", files[fileidx].name);
+  if (markcnt) {
+    for(int i = 0; i < filecnt; i++)
+      if(files[i].flags & FF_MARK)
+        printf("%s\n", files[i].name);
+  }
+  else
+    printf("%s\n", files[fileidx].name);
 	//printf("%s\n", files[fileidx].path);
-        exit(EXIT_SUCCESS);
+
+  exit(EXIT_SUCCESS);
 }
 /*
 bool

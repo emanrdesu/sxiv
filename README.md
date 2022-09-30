@@ -24,7 +24,7 @@ imlib2-devel libexif-devel giflib-devel
 * Square-shaped "marks" and highlighted images in "thumbnail mode".
 * Syncs with pywal by default
 * More thumbnail adjustment on config.h
-* With Q you quit sxiv and output the name of the image that was selected
+* With Enter, you quit sxiv and output the name of the image(s) that were selected
 * Navigate to random image
 * Scale to fill the window
 * Stream images directly from the web (example: `sxiv 'https://raw.githubusercontent.com/explosion-mental/sxiv/main/sxiv.png'` )

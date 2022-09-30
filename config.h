@@ -26,11 +26,11 @@ static const float zoom_levels[]   = {
 
 
 /* thumbnail */
-static const int THUMB_BORDERS[] = { 7 }; /* borders */
-static const int THUMB_MARGIN    = -4;    /* margins between images, buggy with marks */
-static const int THUMB_PADDING   = 0;     /* padding of the highlight or mark */
+static const int THUMB_BORDERS[] = { 4 }; /* borders */
+static const int THUMB_MARGIN    = 2;    /* margins between images, buggy with marks */
+static const int THUMB_PADDING   = 2;     /* padding of the highlight or mark */
 static const int THUMB_SIZE      = 3;     /* thumbnail size at startup, index into thumb_sizes[]: */
-static const int squarethumb     = 1;     /* 0 means normal thumbs (default) */
+static const int squarethumb     = 0;     /* 0 means normal thumbs (default) */
 static const int thumb_sizes[]   = {
  /* thumbnail sizes in pixels (width == height) */
 	32, 64, 116, 145, 181, 286, 361, 412
@@ -144,7 +144,7 @@ static const keymap_t keys[] = {
 	{ 0,		XK_space,	g_switch_mode,		None },
 	{ 0,		XK_f,		g_toggle_fullscreen,	None },
 	{ 0,		XK_b,		g_toggle_bar,		None },
-	{ 0,		XK_Q,		g_dmenu_output,		None },
+	{ 0,		XK_Return,	g_dmenu_output,		None },
 	{ 0,		XK_F5,		g_reload_image,		None },
 	{ ControlMask,	XK_R,		t_reload_all,		None },
 	{ 0,		XK_D,		g_remove_image,		None },

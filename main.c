@@ -548,7 +548,7 @@ get_url(const char *url, char **out) {
 	if (j != 0)
 		j++;
 
-	snprintf(tmp, sizeof(tmp), "/tmp/sxiv-%s", url + j);
+	snprintf(tmp, sizeof(tmp), "/tmp/%s", url + j);
 	file = fopen(tmp, "wb");
 
 	if (file == NULL)

@@ -58,8 +58,8 @@ static const keymap_t keys[] = {
 	{ 0,		XK_bracketright,i_navigate,           +3 },
 	{ 0,		XK_bracketleft,	i_navigate,           -3 },
 	{ 0,		XK_Tab,		i_alternate,          None },
-	{ ControlMask,  XK_j,		i_navigate_frame,     -1 },
-	{ ControlMask,  XK_k,		i_navigate_frame,     +1 },
+	/* { ControlMask,  XK_j,		i_navigate_frame,     -1 }, */
+	/* { ControlMask,  XK_k,		i_navigate_frame,     +1 }, */
 	{ 0,		XK_g,		g_first,              None },
 	{ 0,		XK_G,		g_n_or_last,          None },
 	{ 0,		XK_grave,	i_random_navigate,    None },
